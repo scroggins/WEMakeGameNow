@@ -19,7 +19,7 @@ namespace Characterinfo
 
         private void playerImage_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void charInfoGui_Load(object sender, EventArgs e)

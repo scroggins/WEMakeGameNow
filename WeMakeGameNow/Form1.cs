@@ -10,21 +10,22 @@ using System.Windows.Forms;
 
 namespace WeMakeGameNow
 {
-    public partial class Form1 : Form
+    public partial class OptionsGui : Form
     {
-        public Form1()
+        public OptionsGui()
         {
             InitializeComponent();
         }
 
         private void characterButton_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void inventoryButton_Click(object sender, EventArgs e)
         {
-
+            InventoryGui inventoryGui = new InventoryGui();
+            inventoryGui.Show();
         }
 
         private void spellsButton_Click(object sender, EventArgs e)

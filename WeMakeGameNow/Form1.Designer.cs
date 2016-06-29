@@ -1,6 +1,6 @@
 ﻿namespace WeMakeGameNow
 {
-    partial class Form1
+    partial class OptionsGui
     {
         /// <summary>
         /// Required designer variable.
@@ -129,7 +129,7 @@
             this.returnToTitleButton.UseVisualStyleBackColor = false;
             this.returnToTitleButton.Click += new System.EventHandler(this.returnToTitleButton_Click);
             // 
-            // Form1
+            // OptionsGui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -142,8 +142,8 @@
             this.Controls.Add(this.spellsButton);
             this.Controls.Add(this.inventoryButton);
             this.Controls.Add(this.characterButton);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "OptionsGui";
+            this.Text = "OptionsGui";
             this.ResumeLayout(false);
 
         }
