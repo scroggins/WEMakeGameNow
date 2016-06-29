@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*Made By:
+ * Randy Scroggins
+ * Austin Purcell
+ */ 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,6 +15,7 @@ namespace WeMakeGameNow
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        //
         [STAThread]
         static void Main()
         {
