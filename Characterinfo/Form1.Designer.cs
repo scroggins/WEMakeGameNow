@@ -51,9 +51,9 @@
             // playerImage
             // 
             this.playerImage.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.playerImage.Location = new System.Drawing.Point(9, 82);
+            this.playerImage.Location = new System.Drawing.Point(12, 82);
             this.playerImage.Name = "playerImage";
-            this.playerImage.Size = new System.Drawing.Size(341, 718);
+            this.playerImage.Size = new System.Drawing.Size(341, 340);
             this.playerImage.TabIndex = 1;
             this.playerImage.TabStop = false;
             this.playerImage.Click += new System.EventHandler(this.playerImage_Click);
@@ -63,23 +63,23 @@
             this.listOfCharStatsDisplay.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.listOfCharStatsDisplay.Location = new System.Drawing.Point(372, 82);
             this.listOfCharStatsDisplay.Name = "listOfCharStatsDisplay";
-            this.listOfCharStatsDisplay.Size = new System.Drawing.Size(400, 398);
+            this.listOfCharStatsDisplay.Size = new System.Drawing.Size(257, 103);
             this.listOfCharStatsDisplay.TabIndex = 2;
             this.listOfCharStatsDisplay.Paint += new System.Windows.Forms.PaintEventHandler(this.listOfCharStatsDisplay_Paint);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel4.Location = new System.Drawing.Point(372, 594);
+            this.panel4.Location = new System.Drawing.Point(12, 428);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(400, 100);
+            this.panel4.Size = new System.Drawing.Size(316, 100);
             this.panel4.TabIndex = 5;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel3.Location = new System.Drawing.Point(576, 486);
+            this.panel3.Location = new System.Drawing.Point(372, 352);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(196, 102);
             this.panel3.TabIndex = 6;
@@ -88,7 +88,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel2.Location = new System.Drawing.Point(372, 486);
+            this.panel2.Location = new System.Drawing.Point(372, 224);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(196, 102);
             this.panel2.TabIndex = 7;
@@ -107,7 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(801, 806);
+            this.ClientSize = new System.Drawing.Size(654, 535);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
