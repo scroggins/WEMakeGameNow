@@ -40,7 +40,13 @@
             this.itemImageLabel = new System.Windows.Forms.Label();
             this.selectedItemInfoLabel = new System.Windows.Forms.Label();
             this.filterOptionsLabel = new System.Windows.Forms.Label();
-            this.returnToOptionsButton = new System.Windows.Forms.Button();
+            this.returnToTitleButton = new System.Windows.Forms.Button();
+            this.backToGameButton = new System.Windows.Forms.Button();
+            this.craftingButton = new System.Windows.Forms.Button();
+            this.gameOptionsButton = new System.Windows.Forms.Button();
+            this.spellsButton = new System.Windows.Forms.Button();
+            this.inventoryButton = new System.Windows.Forms.Button();
+            this.characterButton = new System.Windows.Forms.Button();
             this.itemListPanel.SuspendLayout();
             this.selectedItemInfoPanel.SuspendLayout();
             this.itemImagePanel.SuspendLayout();
@@ -51,9 +57,9 @@
             // 
             this.itemListPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.itemListPanel.Controls.Add(this.listItemsLabel);
-            this.itemListPanel.Location = new System.Drawing.Point(21, 67);
+            this.itemListPanel.Location = new System.Drawing.Point(179, 69);
             this.itemListPanel.Name = "itemListPanel";
-            this.itemListPanel.Size = new System.Drawing.Size(303, 680);
+            this.itemListPanel.Size = new System.Drawing.Size(303, 665);
             this.itemListPanel.TabIndex = 0;
             this.itemListPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.itemListPanel_Paint);
             // 
@@ -62,9 +68,9 @@
             this.selectedItemInfoPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.selectedItemInfoPanel.Controls.Add(this.selectedItemInfoLabel);
             this.selectedItemInfoPanel.Controls.Add(this.itemImagePanel);
-            this.selectedItemInfoPanel.Location = new System.Drawing.Point(330, 67);
+            this.selectedItemInfoPanel.Location = new System.Drawing.Point(488, 69);
             this.selectedItemInfoPanel.Name = "selectedItemInfoPanel";
-            this.selectedItemInfoPanel.Size = new System.Drawing.Size(496, 322);
+            this.selectedItemInfoPanel.Size = new System.Drawing.Size(496, 307);
             this.selectedItemInfoPanel.TabIndex = 1;
             this.selectedItemInfoPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.selectedItemInfoPanel_Paint);
             // 
@@ -82,9 +88,9 @@
             // 
             this.useItemButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.useItemButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.useItemButton.Location = new System.Drawing.Point(330, 399);
+            this.useItemButton.Location = new System.Drawing.Point(488, 401);
             this.useItemButton.Name = "useItemButton";
-            this.useItemButton.Size = new System.Drawing.Size(245, 115);
+            this.useItemButton.Size = new System.Drawing.Size(245, 100);
             this.useItemButton.TabIndex = 5;
             this.useItemButton.Text = "Use Item";
             this.useItemButton.UseVisualStyleBackColor = false;
@@ -94,9 +100,9 @@
             // 
             this.equipItemButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.equipItemButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.equipItemButton.Location = new System.Drawing.Point(581, 399);
+            this.equipItemButton.Location = new System.Drawing.Point(739, 401);
             this.equipItemButton.Name = "equipItemButton";
-            this.equipItemButton.Size = new System.Drawing.Size(245, 115);
+            this.equipItemButton.Size = new System.Drawing.Size(245, 100);
             this.equipItemButton.TabIndex = 6;
             this.equipItemButton.Text = "Equip Item";
             this.equipItemButton.UseVisualStyleBackColor = false;
@@ -106,9 +112,9 @@
             // 
             this.craftWithItemButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.craftWithItemButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.craftWithItemButton.Location = new System.Drawing.Point(330, 520);
+            this.craftWithItemButton.Location = new System.Drawing.Point(488, 522);
             this.craftWithItemButton.Name = "craftWithItemButton";
-            this.craftWithItemButton.Size = new System.Drawing.Size(496, 108);
+            this.craftWithItemButton.Size = new System.Drawing.Size(496, 93);
             this.craftWithItemButton.TabIndex = 8;
             this.craftWithItemButton.Text = "Craft With Item (?)";
             this.craftWithItemButton.UseVisualStyleBackColor = false;
@@ -118,9 +124,9 @@
             // 
             this.dropItemButton.BackColor = System.Drawing.Color.Red;
             this.dropItemButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dropItemButton.Location = new System.Drawing.Point(330, 634);
+            this.dropItemButton.Location = new System.Drawing.Point(488, 636);
             this.dropItemButton.Name = "dropItemButton";
-            this.dropItemButton.Size = new System.Drawing.Size(496, 113);
+            this.dropItemButton.Size = new System.Drawing.Size(496, 98);
             this.dropItemButton.TabIndex = 9;
             this.dropItemButton.Text = "Drop Item (?)";
             this.dropItemButton.UseVisualStyleBackColor = false;
@@ -130,9 +136,9 @@
             // 
             this.filterOptionsPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.filterOptionsPanel.Controls.Add(this.filterOptionsLabel);
-            this.filterOptionsPanel.Location = new System.Drawing.Point(287, 6);
+            this.filterOptionsPanel.Location = new System.Drawing.Point(179, 8);
             this.filterOptionsPanel.Name = "filterOptionsPanel";
-            this.filterOptionsPanel.Size = new System.Drawing.Size(544, 55);
+            this.filterOptionsPanel.Size = new System.Drawing.Size(810, 55);
             this.filterOptionsPanel.TabIndex = 10;
             this.filterOptionsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.filterOptionsPanel_Paint);
             // 
@@ -173,31 +179,117 @@
             // 
             this.filterOptionsLabel.AutoSize = true;
             this.filterOptionsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.filterOptionsLabel.Location = new System.Drawing.Point(27, 21);
+            this.filterOptionsLabel.Location = new System.Drawing.Point(22, 4);
             this.filterOptionsLabel.Name = "filterOptionsLabel";
             this.filterOptionsLabel.Size = new System.Drawing.Size(300, 25);
             this.filterOptionsLabel.TabIndex = 0;
             this.filterOptionsLabel.Text = "Various Filtering Options Here";
             this.filterOptionsLabel.Click += new System.EventHandler(this.filterOptionsLabel_Click);
             // 
-            // returnToOptionsButton
+            // returnToTitleButton
             // 
-            this.returnToOptionsButton.BackColor = System.Drawing.Color.Yellow;
-            this.returnToOptionsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.returnToOptionsButton.Location = new System.Drawing.Point(21, 13);
-            this.returnToOptionsButton.Name = "returnToOptionsButton";
-            this.returnToOptionsButton.Size = new System.Drawing.Size(260, 48);
-            this.returnToOptionsButton.TabIndex = 11;
-            this.returnToOptionsButton.Text = "Options Menu";
-            this.returnToOptionsButton.UseVisualStyleBackColor = false;
-            this.returnToOptionsButton.Click += new System.EventHandler(this.returnToOptionsButton_Click);
+            this.returnToTitleButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.returnToTitleButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.returnToTitleButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.returnToTitleButton.Location = new System.Drawing.Point(12, 636);
+            this.returnToTitleButton.Name = "returnToTitleButton";
+            this.returnToTitleButton.Size = new System.Drawing.Size(157, 98);
+            this.returnToTitleButton.TabIndex = 17;
+            this.returnToTitleButton.Text = "Return To Title";
+            this.returnToTitleButton.UseVisualStyleBackColor = false;
+            this.returnToTitleButton.Click += new System.EventHandler(this.returnToTitleButton_Click);
+            // 
+            // backToGameButton
+            // 
+            this.backToGameButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.backToGameButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backToGameButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backToGameButton.Location = new System.Drawing.Point(12, 532);
+            this.backToGameButton.Name = "backToGameButton";
+            this.backToGameButton.Size = new System.Drawing.Size(157, 98);
+            this.backToGameButton.TabIndex = 16;
+            this.backToGameButton.Text = "Back To Game (ESC)";
+            this.backToGameButton.UseVisualStyleBackColor = false;
+            this.backToGameButton.Click += new System.EventHandler(this.backToGameButton_Click);
+            // 
+            // craftingButton
+            // 
+            this.craftingButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.craftingButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.craftingButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.craftingButton.Location = new System.Drawing.Point(12, 324);
+            this.craftingButton.Name = "craftingButton";
+            this.craftingButton.Size = new System.Drawing.Size(157, 98);
+            this.craftingButton.TabIndex = 15;
+            this.craftingButton.Text = "Crafting";
+            this.craftingButton.UseVisualStyleBackColor = false;
+            this.craftingButton.Click += new System.EventHandler(this.craftingButton_Click);
+            // 
+            // gameOptionsButton
+            // 
+            this.gameOptionsButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gameOptionsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gameOptionsButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gameOptionsButton.Location = new System.Drawing.Point(12, 428);
+            this.gameOptionsButton.Name = "gameOptionsButton";
+            this.gameOptionsButton.Size = new System.Drawing.Size(157, 98);
+            this.gameOptionsButton.TabIndex = 14;
+            this.gameOptionsButton.Text = "Game Options";
+            this.gameOptionsButton.UseVisualStyleBackColor = false;
+            this.gameOptionsButton.Click += new System.EventHandler(this.gameOptionsButton_Click);
+            // 
+            // spellsButton
+            // 
+            this.spellsButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.spellsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.spellsButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spellsButton.Location = new System.Drawing.Point(12, 220);
+            this.spellsButton.Name = "spellsButton";
+            this.spellsButton.Size = new System.Drawing.Size(157, 98);
+            this.spellsButton.TabIndex = 13;
+            this.spellsButton.Text = "Spells";
+            this.spellsButton.UseVisualStyleBackColor = false;
+            this.spellsButton.Click += new System.EventHandler(this.spellsButton_Click);
+            // 
+            // inventoryButton
+            // 
+            this.inventoryButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.inventoryButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.inventoryButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inventoryButton.Location = new System.Drawing.Point(12, 116);
+            this.inventoryButton.Name = "inventoryButton";
+            this.inventoryButton.Size = new System.Drawing.Size(157, 98);
+            this.inventoryButton.TabIndex = 12;
+            this.inventoryButton.Text = "Inventory";
+            this.inventoryButton.UseVisualStyleBackColor = false;
+            this.inventoryButton.Click += new System.EventHandler(this.inventoryButton_Click);
+            // 
+            // characterButton
+            // 
+            this.characterButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.characterButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterButton.Location = new System.Drawing.Point(12, 12);
+            this.characterButton.Name = "characterButton";
+            this.characterButton.Size = new System.Drawing.Size(157, 98);
+            this.characterButton.TabIndex = 11;
+            this.characterButton.TabStop = false;
+            this.characterButton.Text = "Character Info";
+            this.characterButton.UseVisualStyleBackColor = false;
+            this.characterButton.Click += new System.EventHandler(this.characterButton_Click);
             // 
             // InventoryGui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(843, 794);
-            this.Controls.Add(this.returnToOptionsButton);
+            this.ClientSize = new System.Drawing.Size(1066, 794);
+            this.Controls.Add(this.returnToTitleButton);
+            this.Controls.Add(this.backToGameButton);
+            this.Controls.Add(this.craftingButton);
+            this.Controls.Add(this.gameOptionsButton);
+            this.Controls.Add(this.spellsButton);
+            this.Controls.Add(this.inventoryButton);
+            this.Controls.Add(this.characterButton);
             this.Controls.Add(this.filterOptionsPanel);
             this.Controls.Add(this.dropItemButton);
             this.Controls.Add(this.craftWithItemButton);
@@ -234,6 +326,12 @@
         private System.Windows.Forms.Button dropItemButton;
         private System.Windows.Forms.Panel filterOptionsPanel;
         private System.Windows.Forms.Label filterOptionsLabel;
-        private System.Windows.Forms.Button returnToOptionsButton;
+        private System.Windows.Forms.Button returnToTitleButton;
+        private System.Windows.Forms.Button backToGameButton;
+        private System.Windows.Forms.Button craftingButton;
+        private System.Windows.Forms.Button gameOptionsButton;
+        private System.Windows.Forms.Button spellsButton;
+        private System.Windows.Forms.Button inventoryButton;
+        private System.Windows.Forms.Button characterButton;
     }
 }
