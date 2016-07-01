@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WeMakeGameNow
 {
-    public partial class GameOptionsGui: Form
+    public partial class CharacterInfoGui : Form
     {
-        public GameOptionsGui()
+        public CharacterInfoGui()
         {
             InitializeComponent();
-        }
-
-        private void GameOptionsGui_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

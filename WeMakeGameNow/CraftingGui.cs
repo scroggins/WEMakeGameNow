@@ -16,5 +16,10 @@ namespace WeMakeGameNow
         {
             InitializeComponent();
         }
+
+        private void CraftingGui_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

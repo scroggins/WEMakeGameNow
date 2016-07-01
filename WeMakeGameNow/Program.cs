@@ -21,7 +21,7 @@ namespace WeMakeGameNow
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new OptionsGui());
+            Application.Run(new OptionMenuGui());
         }
     }
 }

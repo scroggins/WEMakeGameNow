@@ -16,5 +16,10 @@ namespace WeMakeGameNow
         {
             InitializeComponent();
         }
+
+        private void SpellsGui_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

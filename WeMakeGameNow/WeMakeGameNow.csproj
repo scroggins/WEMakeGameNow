@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="CharacterInfoGui.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CharacterInfoGui.Designer.cs">
+      <DependentUpon>CharacterInfoGui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CraftingGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CraftingGui.Designer.cs">
+      <DependentUpon>CraftingGui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameOptionsGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameOptionsGui.Designer.cs">
+      <DependentUpon>GameOptionsGui.cs</DependentUpon>
     </Compile>
     <Compile Include="InventoryGui.cs">
       <SubType>Form</SubType>
@@ -58,13 +70,34 @@
     <Compile Include="InventoryGui.Designer.cs">
       <DependentUpon>InventoryGui.cs</DependentUpon>
     </Compile>
+    <Compile Include="OptionMenuGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionMenuGui.Designer.cs">
+      <DependentUpon>OptionMenuGui.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="SpellsGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpellsGui.Designer.cs">
+      <DependentUpon>SpellsGui.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CharacterInfoGui.resx">
+      <DependentUpon>CharacterInfoGui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CraftingGui.resx">
+      <DependentUpon>CraftingGui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameOptionsGui.resx">
+      <DependentUpon>GameOptionsGui.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryGui.resx">
       <DependentUpon>InventoryGui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionMenuGui.resx">
+      <DependentUpon>OptionMenuGui.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -75,6 +108,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SpellsGui.resx">
+      <DependentUpon>SpellsGui.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -76,5 +76,12 @@ namespace WeMakeGameNow
         {
 
         }
+
+        private void returnToOptionsButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OptionMenuGui optionsMenu = new OptionMenuGui();
+            optionsMenu.Show(); 
+        }
     }
 }

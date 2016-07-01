@@ -40,6 +40,7 @@
             this.itemImageLabel = new System.Windows.Forms.Label();
             this.selectedItemInfoLabel = new System.Windows.Forms.Label();
             this.filterOptionsLabel = new System.Windows.Forms.Label();
+            this.returnToOptionsButton = new System.Windows.Forms.Button();
             this.itemListPanel.SuspendLayout();
             this.selectedItemInfoPanel.SuspendLayout();
             this.itemImagePanel.SuspendLayout();
@@ -129,9 +130,9 @@
             // 
             this.filterOptionsPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.filterOptionsPanel.Controls.Add(this.filterOptionsLabel);
-            this.filterOptionsPanel.Location = new System.Drawing.Point(21, 6);
+            this.filterOptionsPanel.Location = new System.Drawing.Point(287, 6);
             this.filterOptionsPanel.Name = "filterOptionsPanel";
-            this.filterOptionsPanel.Size = new System.Drawing.Size(805, 55);
+            this.filterOptionsPanel.Size = new System.Drawing.Size(544, 55);
             this.filterOptionsPanel.TabIndex = 10;
             this.filterOptionsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.filterOptionsPanel_Paint);
             // 
@@ -179,11 +180,24 @@
             this.filterOptionsLabel.Text = "Various Filtering Options Here";
             this.filterOptionsLabel.Click += new System.EventHandler(this.filterOptionsLabel_Click);
             // 
+            // returnToOptionsButton
+            // 
+            this.returnToOptionsButton.BackColor = System.Drawing.Color.Yellow;
+            this.returnToOptionsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.returnToOptionsButton.Location = new System.Drawing.Point(21, 13);
+            this.returnToOptionsButton.Name = "returnToOptionsButton";
+            this.returnToOptionsButton.Size = new System.Drawing.Size(260, 48);
+            this.returnToOptionsButton.TabIndex = 11;
+            this.returnToOptionsButton.Text = "Options Menu";
+            this.returnToOptionsButton.UseVisualStyleBackColor = false;
+            this.returnToOptionsButton.Click += new System.EventHandler(this.returnToOptionsButton_Click);
+            // 
             // InventoryGui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 794);
+            this.Controls.Add(this.returnToOptionsButton);
             this.Controls.Add(this.filterOptionsPanel);
             this.Controls.Add(this.dropItemButton);
             this.Controls.Add(this.craftWithItemButton);
@@ -220,5 +234,6 @@
         private System.Windows.Forms.Button dropItemButton;
         private System.Windows.Forms.Panel filterOptionsPanel;
         private System.Windows.Forms.Label filterOptionsLabel;
+        private System.Windows.Forms.Button returnToOptionsButton;
     }
 }

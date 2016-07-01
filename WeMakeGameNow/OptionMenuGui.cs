@@ -19,7 +19,9 @@ namespace WeMakeGameNow
 
         private void characterButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            CharacterInfoGui charInfoGui = new CharacterInfoGui();
+            charInfoGui.Show();
         }
 
         private void inventoryButton_Click(object sender, EventArgs e)
