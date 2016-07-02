@@ -47,9 +47,9 @@
             this.listOfRecipesPanel = new System.Windows.Forms.Panel();
             this.listOfRecipesLabel = new System.Windows.Forms.Label();
             this.selectedRecipesInfoPanel = new System.Windows.Forms.Panel();
+            this.selectedRecipeInfoLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.recipeImageLabel = new System.Windows.Forms.Label();
-            this.selectedRecipeInfoLabel = new System.Windows.Forms.Label();
             this.craftRecipeButton = new System.Windows.Forms.Button();
             this.aquireIngrediantsButton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -67,7 +67,7 @@
             this.returnToTitleButton.Location = new System.Drawing.Point(12, 636);
             this.returnToTitleButton.Name = "returnToTitleButton";
             this.returnToTitleButton.Size = new System.Drawing.Size(157, 98);
-            this.returnToTitleButton.TabIndex = 24;
+            this.returnToTitleButton.TabIndex = 6;
             this.returnToTitleButton.Text = "Return To Title";
             this.returnToTitleButton.UseVisualStyleBackColor = false;
             this.returnToTitleButton.Click += new System.EventHandler(this.returnToTitleButton_Click);
@@ -80,7 +80,7 @@
             this.backToGameButton.Location = new System.Drawing.Point(12, 532);
             this.backToGameButton.Name = "backToGameButton";
             this.backToGameButton.Size = new System.Drawing.Size(157, 98);
-            this.backToGameButton.TabIndex = 23;
+            this.backToGameButton.TabIndex = 5;
             this.backToGameButton.Text = "Back To Game (ESC)";
             this.backToGameButton.UseVisualStyleBackColor = false;
             this.backToGameButton.Click += new System.EventHandler(this.backToGameButton_Click);
@@ -93,7 +93,7 @@
             this.craftingButton.Location = new System.Drawing.Point(12, 324);
             this.craftingButton.Name = "craftingButton";
             this.craftingButton.Size = new System.Drawing.Size(157, 98);
-            this.craftingButton.TabIndex = 22;
+            this.craftingButton.TabIndex = 3;
             this.craftingButton.Text = "Crafting";
             this.craftingButton.UseVisualStyleBackColor = false;
             this.craftingButton.Click += new System.EventHandler(this.craftingButton_Click);
@@ -106,7 +106,7 @@
             this.gameOptionsButton.Location = new System.Drawing.Point(12, 428);
             this.gameOptionsButton.Name = "gameOptionsButton";
             this.gameOptionsButton.Size = new System.Drawing.Size(157, 98);
-            this.gameOptionsButton.TabIndex = 21;
+            this.gameOptionsButton.TabIndex = 4;
             this.gameOptionsButton.Text = "Game Options";
             this.gameOptionsButton.UseVisualStyleBackColor = false;
             this.gameOptionsButton.Click += new System.EventHandler(this.gameOptionsButton_Click);
@@ -119,7 +119,7 @@
             this.spellsButton.Location = new System.Drawing.Point(12, 220);
             this.spellsButton.Name = "spellsButton";
             this.spellsButton.Size = new System.Drawing.Size(157, 98);
-            this.spellsButton.TabIndex = 20;
+            this.spellsButton.TabIndex = 2;
             this.spellsButton.Text = "Spells";
             this.spellsButton.UseVisualStyleBackColor = false;
             this.spellsButton.Click += new System.EventHandler(this.spellsButton_Click);
@@ -132,7 +132,7 @@
             this.inventoryButton.Location = new System.Drawing.Point(12, 116);
             this.inventoryButton.Name = "inventoryButton";
             this.inventoryButton.Size = new System.Drawing.Size(157, 98);
-            this.inventoryButton.TabIndex = 19;
+            this.inventoryButton.TabIndex = 1;
             this.inventoryButton.Text = "Inventory";
             this.inventoryButton.UseVisualStyleBackColor = false;
             this.inventoryButton.Click += new System.EventHandler(this.inventoryButton_Click);
@@ -145,8 +145,7 @@
             this.characterButton.Location = new System.Drawing.Point(12, 12);
             this.characterButton.Name = "characterButton";
             this.characterButton.Size = new System.Drawing.Size(157, 98);
-            this.characterButton.TabIndex = 18;
-            this.characterButton.TabStop = false;
+            this.characterButton.TabIndex = 0;
             this.characterButton.Text = "Character Info";
             this.characterButton.UseVisualStyleBackColor = false;
             this.characterButton.Click += new System.EventHandler(this.characterButton_Click);
@@ -158,7 +157,7 @@
             this.alchemyButton.Location = new System.Drawing.Point(175, 12);
             this.alchemyButton.Name = "alchemyButton";
             this.alchemyButton.Size = new System.Drawing.Size(157, 65);
-            this.alchemyButton.TabIndex = 25;
+            this.alchemyButton.TabIndex = 7;
             this.alchemyButton.Text = "Alchemy";
             this.alchemyButton.UseVisualStyleBackColor = false;
             this.alchemyButton.Click += new System.EventHandler(this.alchemyButton_Click);
@@ -170,7 +169,7 @@
             this.experimentButton.Location = new System.Drawing.Point(827, 83);
             this.experimentButton.Name = "experimentButton";
             this.experimentButton.Size = new System.Drawing.Size(157, 65);
-            this.experimentButton.TabIndex = 26;
+            this.experimentButton.TabIndex = 13;
             this.experimentButton.Text = "Experiment";
             this.experimentButton.UseVisualStyleBackColor = false;
             this.experimentButton.Click += new System.EventHandler(this.experimentButton_Click);
@@ -182,7 +181,7 @@
             this.enchantmentButton.Location = new System.Drawing.Point(175, 83);
             this.enchantmentButton.Name = "enchantmentButton";
             this.enchantmentButton.Size = new System.Drawing.Size(157, 65);
-            this.enchantmentButton.TabIndex = 27;
+            this.enchantmentButton.TabIndex = 12;
             this.enchantmentButton.Text = "Enchantment";
             this.enchantmentButton.UseVisualStyleBackColor = false;
             this.enchantmentButton.Click += new System.EventHandler(this.enchantmentButton_Click);
@@ -194,7 +193,7 @@
             this.blacksmithingButton.Location = new System.Drawing.Point(338, 12);
             this.blacksmithingButton.Name = "blacksmithingButton";
             this.blacksmithingButton.Size = new System.Drawing.Size(157, 65);
-            this.blacksmithingButton.TabIndex = 28;
+            this.blacksmithingButton.TabIndex = 8;
             this.blacksmithingButton.Text = "Blacksmithing";
             this.blacksmithingButton.UseVisualStyleBackColor = false;
             this.blacksmithingButton.Click += new System.EventHandler(this.blacksmithingButton_Click);
@@ -206,7 +205,7 @@
             this.tailoringButton.Location = new System.Drawing.Point(501, 12);
             this.tailoringButton.Name = "tailoringButton";
             this.tailoringButton.Size = new System.Drawing.Size(157, 65);
-            this.tailoringButton.TabIndex = 29;
+            this.tailoringButton.TabIndex = 9;
             this.tailoringButton.Text = "Tailoring";
             this.tailoringButton.UseVisualStyleBackColor = false;
             this.tailoringButton.Click += new System.EventHandler(this.tailoringButton_Click);
@@ -218,7 +217,7 @@
             this.woodCraftButton.Location = new System.Drawing.Point(827, 12);
             this.woodCraftButton.Name = "woodCraftButton";
             this.woodCraftButton.Size = new System.Drawing.Size(157, 65);
-            this.woodCraftButton.TabIndex = 30;
+            this.woodCraftButton.TabIndex = 11;
             this.woodCraftButton.Text = "Woodcraft";
             this.woodCraftButton.UseVisualStyleBackColor = false;
             this.woodCraftButton.Click += new System.EventHandler(this.woodCraftButton_Click);
@@ -230,7 +229,7 @@
             this.leatherWorkingButton.Location = new System.Drawing.Point(664, 12);
             this.leatherWorkingButton.Name = "leatherWorkingButton";
             this.leatherWorkingButton.Size = new System.Drawing.Size(157, 65);
-            this.leatherWorkingButton.TabIndex = 31;
+            this.leatherWorkingButton.TabIndex = 10;
             this.leatherWorkingButton.Text = "Leather Working";
             this.leatherWorkingButton.UseVisualStyleBackColor = false;
             this.leatherWorkingButton.Click += new System.EventHandler(this.leatherWorkingButton_Click);
@@ -287,6 +286,17 @@
             this.selectedRecipesInfoPanel.TabIndex = 34;
             this.selectedRecipesInfoPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.selectedRecipesInfoPanel_Paint);
             // 
+            // selectedRecipeInfoLabel
+            // 
+            this.selectedRecipeInfoLabel.AutoSize = true;
+            this.selectedRecipeInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectedRecipeInfoLabel.Location = new System.Drawing.Point(11, 95);
+            this.selectedRecipeInfoLabel.Name = "selectedRecipeInfoLabel";
+            this.selectedRecipeInfoLabel.Size = new System.Drawing.Size(210, 25);
+            this.selectedRecipeInfoLabel.TabIndex = 1;
+            this.selectedRecipeInfoLabel.Text = "Selected Recipe Info";
+            this.selectedRecipeInfoLabel.Click += new System.EventHandler(this.selectedRecipeInfoLabel_Click);
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.recipeImageLabel);
@@ -306,17 +316,6 @@
             this.recipeImageLabel.TabIndex = 0;
             this.recipeImageLabel.Text = "Recipe Image";
             this.recipeImageLabel.Click += new System.EventHandler(this.recipeImageLabel_Click);
-            // 
-            // selectedRecipeInfoLabel
-            // 
-            this.selectedRecipeInfoLabel.AutoSize = true;
-            this.selectedRecipeInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectedRecipeInfoLabel.Location = new System.Drawing.Point(11, 95);
-            this.selectedRecipeInfoLabel.Name = "selectedRecipeInfoLabel";
-            this.selectedRecipeInfoLabel.Size = new System.Drawing.Size(210, 25);
-            this.selectedRecipeInfoLabel.TabIndex = 1;
-            this.selectedRecipeInfoLabel.Text = "Selected Recipe Info";
-            this.selectedRecipeInfoLabel.Click += new System.EventHandler(this.selectedRecipeInfoLabel_Click);
             // 
             // craftRecipeButton
             // 

@@ -36,10 +36,10 @@
             this.inventoryButton = new System.Windows.Forms.Button();
             this.characterButton = new System.Windows.Forms.Button();
             this.soundPanel = new System.Windows.Forms.Panel();
-            this.controlPanel = new System.Windows.Forms.Panel();
-            this.interfaceVideoPanel = new System.Windows.Forms.Panel();
             this.soundLable = new System.Windows.Forms.Label();
+            this.controlPanel = new System.Windows.Forms.Panel();
             this.controlsLabel = new System.Windows.Forms.Label();
+            this.interfaceVideoPanel = new System.Windows.Forms.Panel();
             this.interfaceVideoLabel = new System.Windows.Forms.Label();
             this.soundPanel.SuspendLayout();
             this.controlPanel.SuspendLayout();
@@ -80,7 +80,7 @@
             this.craftingButton.Location = new System.Drawing.Point(12, 324);
             this.craftingButton.Name = "craftingButton";
             this.craftingButton.Size = new System.Drawing.Size(157, 98);
-            this.craftingButton.TabIndex = 26;
+            this.craftingButton.TabIndex = 25;
             this.craftingButton.Text = "Crafting";
             this.craftingButton.UseVisualStyleBackColor = false;
             this.craftingButton.Click += new System.EventHandler(this.craftingButton_Click);
@@ -93,7 +93,7 @@
             this.gameOptionsButton.Location = new System.Drawing.Point(12, 428);
             this.gameOptionsButton.Name = "gameOptionsButton";
             this.gameOptionsButton.Size = new System.Drawing.Size(157, 98);
-            this.gameOptionsButton.TabIndex = 25;
+            this.gameOptionsButton.TabIndex = 26;
             this.gameOptionsButton.Text = "Game Options";
             this.gameOptionsButton.UseVisualStyleBackColor = false;
             this.gameOptionsButton.Click += new System.EventHandler(this.gameOptionsButton_Click);
@@ -133,7 +133,6 @@
             this.characterButton.Name = "characterButton";
             this.characterButton.Size = new System.Drawing.Size(157, 98);
             this.characterButton.TabIndex = 22;
-            this.characterButton.TabStop = false;
             this.characterButton.Text = "Character Info";
             this.characterButton.UseVisualStyleBackColor = false;
             this.characterButton.Click += new System.EventHandler(this.characterButton_Click);
@@ -148,26 +147,6 @@
             this.soundPanel.TabIndex = 29;
             this.soundPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.soundPanel_Paint);
             // 
-            // controlPanel
-            // 
-            this.controlPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.controlPanel.Controls.Add(this.controlsLabel);
-            this.controlPanel.Location = new System.Drawing.Point(195, 264);
-            this.controlPanel.Name = "controlPanel";
-            this.controlPanel.Size = new System.Drawing.Size(859, 262);
-            this.controlPanel.TabIndex = 30;
-            this.controlPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.controlPanel_Paint);
-            // 
-            // interfaceVideoPanel
-            // 
-            this.interfaceVideoPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.interfaceVideoPanel.Controls.Add(this.interfaceVideoLabel);
-            this.interfaceVideoPanel.Location = new System.Drawing.Point(195, 536);
-            this.interfaceVideoPanel.Name = "interfaceVideoPanel";
-            this.interfaceVideoPanel.Size = new System.Drawing.Size(859, 246);
-            this.interfaceVideoPanel.TabIndex = 31;
-            this.interfaceVideoPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.interfaceVideoPanel_Paint);
-            // 
             // soundLable
             // 
             this.soundLable.AutoSize = true;
@@ -179,6 +158,16 @@
             this.soundLable.Text = "Sound";
             this.soundLable.Click += new System.EventHandler(this.soundLable_Click);
             // 
+            // controlPanel
+            // 
+            this.controlPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.controlPanel.Controls.Add(this.controlsLabel);
+            this.controlPanel.Location = new System.Drawing.Point(195, 264);
+            this.controlPanel.Name = "controlPanel";
+            this.controlPanel.Size = new System.Drawing.Size(859, 262);
+            this.controlPanel.TabIndex = 30;
+            this.controlPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.controlPanel_Paint);
+            // 
             // controlsLabel
             // 
             this.controlsLabel.AutoSize = true;
@@ -189,6 +178,16 @@
             this.controlsLabel.TabIndex = 1;
             this.controlsLabel.Text = "Controls";
             this.controlsLabel.Click += new System.EventHandler(this.controlsLabel_Click);
+            // 
+            // interfaceVideoPanel
+            // 
+            this.interfaceVideoPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.interfaceVideoPanel.Controls.Add(this.interfaceVideoLabel);
+            this.interfaceVideoPanel.Location = new System.Drawing.Point(195, 536);
+            this.interfaceVideoPanel.Name = "interfaceVideoPanel";
+            this.interfaceVideoPanel.Size = new System.Drawing.Size(859, 246);
+            this.interfaceVideoPanel.TabIndex = 31;
+            this.interfaceVideoPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.interfaceVideoPanel_Paint);
             // 
             // interfaceVideoLabel
             // 

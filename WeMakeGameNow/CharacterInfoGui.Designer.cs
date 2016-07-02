@@ -154,7 +154,7 @@
             this.craftingButton.Location = new System.Drawing.Point(12, 324);
             this.craftingButton.Name = "craftingButton";
             this.craftingButton.Size = new System.Drawing.Size(157, 98);
-            this.craftingButton.TabIndex = 12;
+            this.craftingButton.TabIndex = 11;
             this.craftingButton.Text = "Crafting";
             this.craftingButton.UseVisualStyleBackColor = false;
             this.craftingButton.Click += new System.EventHandler(this.craftingButton_Click);
@@ -167,7 +167,7 @@
             this.gameOptionsButton.Location = new System.Drawing.Point(12, 428);
             this.gameOptionsButton.Name = "gameOptionsButton";
             this.gameOptionsButton.Size = new System.Drawing.Size(157, 98);
-            this.gameOptionsButton.TabIndex = 11;
+            this.gameOptionsButton.TabIndex = 12;
             this.gameOptionsButton.Text = "Game Options";
             this.gameOptionsButton.UseVisualStyleBackColor = false;
             this.gameOptionsButton.Click += new System.EventHandler(this.gameOptionsButton_Click);
@@ -207,7 +207,6 @@
             this.characterButton.Name = "characterButton";
             this.characterButton.Size = new System.Drawing.Size(157, 98);
             this.characterButton.TabIndex = 8;
-            this.characterButton.TabStop = false;
             this.characterButton.Text = "Character Info";
             this.characterButton.UseVisualStyleBackColor = false;
             this.characterButton.Click += new System.EventHandler(this.characterButton_Click);
