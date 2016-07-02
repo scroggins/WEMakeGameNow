@@ -89,6 +89,7 @@ namespace WeMakeGameNow
             this.Hide();
             CharacterInfoGui charGui = new CharacterInfoGui();
             charGui.Show();
+            this.Close();
         }
 
         private void inventoryButton_Click(object sender, EventArgs e)
@@ -96,32 +97,40 @@ namespace WeMakeGameNow
             this.Hide();
             OptionMenuGui optionMenuGui = new OptionMenuGui();
             optionMenuGui.Show();
+            this.Close();
             //takes us back to the the original screen
         }
 
         private void spellsButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            SpellsGui spellGui = new SpellsGui();
+            spellGui.Show();
         }
 
         private void craftingButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            CraftingGui craftingGui = new CraftingGui();
+            craftingGui.Show();
         }
 
         private void gameOptionsButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            GameOptionsGui gameOptionsGui = new GameOptionsGui();
+            gameOptionsGui.Show();
         }
 
         private void backToGameButton_Click(object sender, EventArgs e)
         {
-
+            //need to return to game and close this gui 
+            this.Close();
         }
 
         private void returnToTitleButton_Click(object sender, EventArgs e)
         {
-
+            //need a title to return to
         }
     }
 }

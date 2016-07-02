@@ -68,5 +68,62 @@ namespace WeMakeGameNow
         {
 
         }
+
+        private void characterButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OptionMenuGui optionGui = new OptionMenuGui();
+            optionGui.Show();
+            this.Close();
+        }
+
+        private void inventoryButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            InventoryGui inventoryGui = new InventoryGui();
+            inventoryGui.Show();
+        }
+
+        private void spellsButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SpellsGui spellGui = new SpellsGui();
+            spellGui.Show();
+        }
+
+        private void craftingButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CraftingGui craftingGui = new CraftingGui();
+            craftingGui.Show();
+        }
+
+        private void gameOptionsButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            GameOptionsGui gameOptionsGui = new GameOptionsGui();
+            gameOptionsGui.Show();
+        }
+
+        private void backToGameButton_Click(object sender, EventArgs e)
+        {
+            //need to return to game and close this gui 
+            this.Close();
+        }
+
+        private void returnToTitleButton_Click(object sender, EventArgs e)
+        {
+            //need a title to return to
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
