@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.itemListPanel = new System.Windows.Forms.Panel();
-            this.listItemsLabel = new System.Windows.Forms.Label();
             this.selectedItemInfoPanel = new System.Windows.Forms.Panel();
-            this.selectedItemInfoLabel = new System.Windows.Forms.Label();
             this.itemImagePanel = new System.Windows.Forms.Panel();
-            this.itemImageLabel = new System.Windows.Forms.Label();
             this.useItemButton = new System.Windows.Forms.Button();
             this.equipItemButton = new System.Windows.Forms.Button();
             this.craftWithItemButton = new System.Windows.Forms.Button();
             this.dropItemButton = new System.Windows.Forms.Button();
             this.filterOptionsPanel = new System.Windows.Forms.Panel();
+            this.listItemsLabel = new System.Windows.Forms.Label();
+            this.itemImageLabel = new System.Windows.Forms.Label();
+            this.selectedItemInfoLabel = new System.Windows.Forms.Label();
             this.filterOptionsLabel = new System.Windows.Forms.Label();
             this.returnToTitleButton = new System.Windows.Forms.Button();
             this.backToGameButton = new System.Windows.Forms.Button();
@@ -63,17 +63,6 @@
             this.itemListPanel.TabIndex = 0;
             this.itemListPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.itemListPanel_Paint);
             // 
-            // listItemsLabel
-            // 
-            this.listItemsLabel.AutoSize = true;
-            this.listItemsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listItemsLabel.Location = new System.Drawing.Point(22, 297);
-            this.listItemsLabel.Name = "listItemsLabel";
-            this.listItemsLabel.Size = new System.Drawing.Size(131, 25);
-            this.listItemsLabel.TabIndex = 0;
-            this.listItemsLabel.Text = "List Of Items";
-            this.listItemsLabel.Click += new System.EventHandler(this.listItemsLabel_Click);
-            // 
             // selectedItemInfoPanel
             // 
             this.selectedItemInfoPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -85,17 +74,6 @@
             this.selectedItemInfoPanel.TabIndex = 1;
             this.selectedItemInfoPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.selectedItemInfoPanel_Paint);
             // 
-            // selectedItemInfoLabel
-            // 
-            this.selectedItemInfoLabel.AutoSize = true;
-            this.selectedItemInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectedItemInfoLabel.Location = new System.Drawing.Point(16, 183);
-            this.selectedItemInfoLabel.Name = "selectedItemInfoLabel";
-            this.selectedItemInfoLabel.Size = new System.Drawing.Size(183, 25);
-            this.selectedItemInfoLabel.TabIndex = 3;
-            this.selectedItemInfoLabel.Text = "Selected Item Info";
-            this.selectedItemInfoLabel.Click += new System.EventHandler(this.selectedItemInfoLabel_Click);
-            // 
             // itemImagePanel
             // 
             this.itemImagePanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -105,17 +83,6 @@
             this.itemImagePanel.Name = "itemImagePanel";
             this.itemImagePanel.Size = new System.Drawing.Size(156, 148);
             this.itemImagePanel.TabIndex = 2;
-            // 
-            // itemImageLabel
-            // 
-            this.itemImageLabel.AutoSize = true;
-            this.itemImageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemImageLabel.Location = new System.Drawing.Point(3, 54);
-            this.itemImageLabel.Name = "itemImageLabel";
-            this.itemImageLabel.Size = new System.Drawing.Size(116, 25);
-            this.itemImageLabel.TabIndex = 0;
-            this.itemImageLabel.Text = "Item Image";
-            this.itemImageLabel.Click += new System.EventHandler(this.itemImageLabel_Click);
             // 
             // useItemButton
             // 
@@ -175,6 +142,39 @@
             this.filterOptionsPanel.TabIndex = 10;
             this.filterOptionsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.filterOptionsPanel_Paint);
             // 
+            // listItemsLabel
+            // 
+            this.listItemsLabel.AutoSize = true;
+            this.listItemsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listItemsLabel.Location = new System.Drawing.Point(22, 297);
+            this.listItemsLabel.Name = "listItemsLabel";
+            this.listItemsLabel.Size = new System.Drawing.Size(131, 25);
+            this.listItemsLabel.TabIndex = 0;
+            this.listItemsLabel.Text = "List Of Items";
+            this.listItemsLabel.Click += new System.EventHandler(this.listItemsLabel_Click);
+            // 
+            // itemImageLabel
+            // 
+            this.itemImageLabel.AutoSize = true;
+            this.itemImageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemImageLabel.Location = new System.Drawing.Point(3, 54);
+            this.itemImageLabel.Name = "itemImageLabel";
+            this.itemImageLabel.Size = new System.Drawing.Size(116, 25);
+            this.itemImageLabel.TabIndex = 0;
+            this.itemImageLabel.Text = "Item Image";
+            this.itemImageLabel.Click += new System.EventHandler(this.itemImageLabel_Click);
+            // 
+            // selectedItemInfoLabel
+            // 
+            this.selectedItemInfoLabel.AutoSize = true;
+            this.selectedItemInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectedItemInfoLabel.Location = new System.Drawing.Point(16, 183);
+            this.selectedItemInfoLabel.Name = "selectedItemInfoLabel";
+            this.selectedItemInfoLabel.Size = new System.Drawing.Size(183, 25);
+            this.selectedItemInfoLabel.TabIndex = 3;
+            this.selectedItemInfoLabel.Text = "Selected Item Info";
+            this.selectedItemInfoLabel.Click += new System.EventHandler(this.selectedItemInfoLabel_Click);
+            // 
             // filterOptionsLabel
             // 
             this.filterOptionsLabel.AutoSize = true;
@@ -191,84 +191,92 @@
             this.returnToTitleButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.returnToTitleButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.returnToTitleButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.returnToTitleButton.Location = new System.Drawing.Point(12, 632);
+            this.returnToTitleButton.Location = new System.Drawing.Point(12, 636);
             this.returnToTitleButton.Name = "returnToTitleButton";
             this.returnToTitleButton.Size = new System.Drawing.Size(157, 98);
-            this.returnToTitleButton.TabIndex = 13;
+            this.returnToTitleButton.TabIndex = 17;
             this.returnToTitleButton.Text = "Return To Title";
             this.returnToTitleButton.UseVisualStyleBackColor = false;
+            this.returnToTitleButton.Click += new System.EventHandler(this.returnToTitleButton_Click);
             // 
             // backToGameButton
             // 
             this.backToGameButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.backToGameButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.backToGameButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backToGameButton.Location = new System.Drawing.Point(12, 528);
+            this.backToGameButton.Location = new System.Drawing.Point(12, 532);
             this.backToGameButton.Name = "backToGameButton";
             this.backToGameButton.Size = new System.Drawing.Size(157, 98);
-            this.backToGameButton.TabIndex = 12;
+            this.backToGameButton.TabIndex = 16;
             this.backToGameButton.Text = "Back To Game (ESC)";
             this.backToGameButton.UseVisualStyleBackColor = false;
+            this.backToGameButton.Click += new System.EventHandler(this.backToGameButton_Click);
             // 
             // craftingButton
             // 
             this.craftingButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.craftingButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.craftingButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.craftingButton.Location = new System.Drawing.Point(12, 320);
+            this.craftingButton.Location = new System.Drawing.Point(12, 324);
             this.craftingButton.Name = "craftingButton";
             this.craftingButton.Size = new System.Drawing.Size(157, 98);
-            this.craftingButton.TabIndex = 10;
+            this.craftingButton.TabIndex = 15;
             this.craftingButton.Text = "Crafting";
             this.craftingButton.UseVisualStyleBackColor = false;
+            this.craftingButton.Click += new System.EventHandler(this.craftingButton_Click);
             // 
             // gameOptionsButton
             // 
             this.gameOptionsButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.gameOptionsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gameOptionsButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gameOptionsButton.Location = new System.Drawing.Point(12, 424);
+            this.gameOptionsButton.Location = new System.Drawing.Point(12, 428);
             this.gameOptionsButton.Name = "gameOptionsButton";
             this.gameOptionsButton.Size = new System.Drawing.Size(157, 98);
-            this.gameOptionsButton.TabIndex = 11;
+            this.gameOptionsButton.TabIndex = 14;
             this.gameOptionsButton.Text = "Game Options";
             this.gameOptionsButton.UseVisualStyleBackColor = false;
+            this.gameOptionsButton.Click += new System.EventHandler(this.gameOptionsButton_Click);
             // 
             // spellsButton
             // 
             this.spellsButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.spellsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.spellsButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellsButton.Location = new System.Drawing.Point(12, 216);
+            this.spellsButton.Location = new System.Drawing.Point(12, 220);
             this.spellsButton.Name = "spellsButton";
             this.spellsButton.Size = new System.Drawing.Size(157, 98);
-            this.spellsButton.TabIndex = 9;
+            this.spellsButton.TabIndex = 13;
             this.spellsButton.Text = "Spells";
             this.spellsButton.UseVisualStyleBackColor = false;
+            this.spellsButton.Click += new System.EventHandler(this.spellsButton_Click);
             // 
             // inventoryButton
             // 
             this.inventoryButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.inventoryButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.inventoryButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inventoryButton.Location = new System.Drawing.Point(12, 112);
+            this.inventoryButton.Location = new System.Drawing.Point(12, 116);
             this.inventoryButton.Name = "inventoryButton";
             this.inventoryButton.Size = new System.Drawing.Size(157, 98);
-            this.inventoryButton.TabIndex = 8;
+            this.inventoryButton.TabIndex = 12;
             this.inventoryButton.Text = "Inventory";
             this.inventoryButton.UseVisualStyleBackColor = false;
+            this.inventoryButton.Click += new System.EventHandler(this.inventoryButton_Click);
             // 
             // characterButton
             // 
             this.characterButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.characterButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.characterButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.characterButton.Location = new System.Drawing.Point(12, 8);
+            this.characterButton.Location = new System.Drawing.Point(12, 12);
             this.characterButton.Name = "characterButton";
             this.characterButton.Size = new System.Drawing.Size(157, 98);
-            this.characterButton.TabIndex = 7;
+            this.characterButton.TabIndex = 11;
+            this.characterButton.TabStop = false;
             this.characterButton.Text = "Character Info";
             this.characterButton.UseVisualStyleBackColor = false;
+            this.characterButton.Click += new System.EventHandler(this.characterButton_Click);
             // 
             // InventoryGui
             // 
@@ -276,17 +284,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1066, 794);
             this.Controls.Add(this.returnToTitleButton);
-            this.Controls.Add(this.filterOptionsPanel);
             this.Controls.Add(this.backToGameButton);
-            this.Controls.Add(this.dropItemButton);
             this.Controls.Add(this.craftingButton);
-            this.Controls.Add(this.craftWithItemButton);
             this.Controls.Add(this.gameOptionsButton);
             this.Controls.Add(this.spellsButton);
-            this.Controls.Add(this.equipItemButton);
             this.Controls.Add(this.inventoryButton);
-            this.Controls.Add(this.useItemButton);
             this.Controls.Add(this.characterButton);
+            this.Controls.Add(this.filterOptionsPanel);
+            this.Controls.Add(this.dropItemButton);
+            this.Controls.Add(this.craftWithItemButton);
+            this.Controls.Add(this.equipItemButton);
+            this.Controls.Add(this.useItemButton);
             this.Controls.Add(this.selectedItemInfoPanel);
             this.Controls.Add(this.itemListPanel);
             this.Name = "InventoryGui";

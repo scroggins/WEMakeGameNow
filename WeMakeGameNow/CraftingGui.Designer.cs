@@ -28,6 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.returnToTitleButton = new System.Windows.Forms.Button();
+            this.backToGameButton = new System.Windows.Forms.Button();
+            this.craftingButton = new System.Windows.Forms.Button();
+            this.gameOptionsButton = new System.Windows.Forms.Button();
+            this.spellsButton = new System.Windows.Forms.Button();
+            this.inventoryButton = new System.Windows.Forms.Button();
+            this.characterButton = new System.Windows.Forms.Button();
             this.alchemyButton = new System.Windows.Forms.Button();
             this.experimentButton = new System.Windows.Forms.Button();
             this.enchantmentButton = new System.Windows.Forms.Button();
@@ -40,24 +47,109 @@
             this.listOfRecipesPanel = new System.Windows.Forms.Panel();
             this.listOfRecipesLabel = new System.Windows.Forms.Label();
             this.selectedRecipesInfoPanel = new System.Windows.Forms.Panel();
-            this.selectedRecipeInfoLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.recipeImageLabel = new System.Windows.Forms.Label();
+            this.selectedRecipeInfoLabel = new System.Windows.Forms.Label();
             this.craftRecipeButton = new System.Windows.Forms.Button();
             this.aquireIngrediantsButton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.returnToTitleButton = new System.Windows.Forms.Button();
-            this.backToGameButton = new System.Windows.Forms.Button();
-            this.craftingButton = new System.Windows.Forms.Button();
-            this.gameOptionsButton = new System.Windows.Forms.Button();
-            this.spellsButton = new System.Windows.Forms.Button();
-            this.inventoryButton = new System.Windows.Forms.Button();
-            this.characterButton = new System.Windows.Forms.Button();
             this.filteringOptionsPanel.SuspendLayout();
             this.listOfRecipesPanel.SuspendLayout();
             this.selectedRecipesInfoPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // returnToTitleButton
+            // 
+            this.returnToTitleButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.returnToTitleButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.returnToTitleButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.returnToTitleButton.Location = new System.Drawing.Point(12, 636);
+            this.returnToTitleButton.Name = "returnToTitleButton";
+            this.returnToTitleButton.Size = new System.Drawing.Size(157, 98);
+            this.returnToTitleButton.TabIndex = 24;
+            this.returnToTitleButton.Text = "Return To Title";
+            this.returnToTitleButton.UseVisualStyleBackColor = false;
+            this.returnToTitleButton.Click += new System.EventHandler(this.returnToTitleButton_Click);
+            // 
+            // backToGameButton
+            // 
+            this.backToGameButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.backToGameButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backToGameButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backToGameButton.Location = new System.Drawing.Point(12, 532);
+            this.backToGameButton.Name = "backToGameButton";
+            this.backToGameButton.Size = new System.Drawing.Size(157, 98);
+            this.backToGameButton.TabIndex = 23;
+            this.backToGameButton.Text = "Back To Game (ESC)";
+            this.backToGameButton.UseVisualStyleBackColor = false;
+            this.backToGameButton.Click += new System.EventHandler(this.backToGameButton_Click);
+            // 
+            // craftingButton
+            // 
+            this.craftingButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.craftingButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.craftingButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.craftingButton.Location = new System.Drawing.Point(12, 324);
+            this.craftingButton.Name = "craftingButton";
+            this.craftingButton.Size = new System.Drawing.Size(157, 98);
+            this.craftingButton.TabIndex = 22;
+            this.craftingButton.Text = "Crafting";
+            this.craftingButton.UseVisualStyleBackColor = false;
+            this.craftingButton.Click += new System.EventHandler(this.craftingButton_Click);
+            // 
+            // gameOptionsButton
+            // 
+            this.gameOptionsButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gameOptionsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gameOptionsButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gameOptionsButton.Location = new System.Drawing.Point(12, 428);
+            this.gameOptionsButton.Name = "gameOptionsButton";
+            this.gameOptionsButton.Size = new System.Drawing.Size(157, 98);
+            this.gameOptionsButton.TabIndex = 21;
+            this.gameOptionsButton.Text = "Game Options";
+            this.gameOptionsButton.UseVisualStyleBackColor = false;
+            this.gameOptionsButton.Click += new System.EventHandler(this.gameOptionsButton_Click);
+            // 
+            // spellsButton
+            // 
+            this.spellsButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.spellsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.spellsButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spellsButton.Location = new System.Drawing.Point(12, 220);
+            this.spellsButton.Name = "spellsButton";
+            this.spellsButton.Size = new System.Drawing.Size(157, 98);
+            this.spellsButton.TabIndex = 20;
+            this.spellsButton.Text = "Spells";
+            this.spellsButton.UseVisualStyleBackColor = false;
+            this.spellsButton.Click += new System.EventHandler(this.spellsButton_Click);
+            // 
+            // inventoryButton
+            // 
+            this.inventoryButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.inventoryButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.inventoryButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inventoryButton.Location = new System.Drawing.Point(12, 116);
+            this.inventoryButton.Name = "inventoryButton";
+            this.inventoryButton.Size = new System.Drawing.Size(157, 98);
+            this.inventoryButton.TabIndex = 19;
+            this.inventoryButton.Text = "Inventory";
+            this.inventoryButton.UseVisualStyleBackColor = false;
+            this.inventoryButton.Click += new System.EventHandler(this.inventoryButton_Click);
+            // 
+            // characterButton
+            // 
+            this.characterButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.characterButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterButton.Location = new System.Drawing.Point(12, 12);
+            this.characterButton.Name = "characterButton";
+            this.characterButton.Size = new System.Drawing.Size(157, 98);
+            this.characterButton.TabIndex = 18;
+            this.characterButton.TabStop = false;
+            this.characterButton.Text = "Character Info";
+            this.characterButton.UseVisualStyleBackColor = false;
+            this.characterButton.Click += new System.EventHandler(this.characterButton_Click);
             // 
             // alchemyButton
             // 
@@ -195,17 +287,6 @@
             this.selectedRecipesInfoPanel.TabIndex = 34;
             this.selectedRecipesInfoPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.selectedRecipesInfoPanel_Paint);
             // 
-            // selectedRecipeInfoLabel
-            // 
-            this.selectedRecipeInfoLabel.AutoSize = true;
-            this.selectedRecipeInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectedRecipeInfoLabel.Location = new System.Drawing.Point(11, 95);
-            this.selectedRecipeInfoLabel.Name = "selectedRecipeInfoLabel";
-            this.selectedRecipeInfoLabel.Size = new System.Drawing.Size(210, 25);
-            this.selectedRecipeInfoLabel.TabIndex = 1;
-            this.selectedRecipeInfoLabel.Text = "Selected Recipe Info";
-            this.selectedRecipeInfoLabel.Click += new System.EventHandler(this.selectedRecipeInfoLabel_Click);
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.recipeImageLabel);
@@ -225,6 +306,17 @@
             this.recipeImageLabel.TabIndex = 0;
             this.recipeImageLabel.Text = "Recipe Image";
             this.recipeImageLabel.Click += new System.EventHandler(this.recipeImageLabel_Click);
+            // 
+            // selectedRecipeInfoLabel
+            // 
+            this.selectedRecipeInfoLabel.AutoSize = true;
+            this.selectedRecipeInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectedRecipeInfoLabel.Location = new System.Drawing.Point(11, 95);
+            this.selectedRecipeInfoLabel.Name = "selectedRecipeInfoLabel";
+            this.selectedRecipeInfoLabel.Size = new System.Drawing.Size(210, 25);
+            this.selectedRecipeInfoLabel.TabIndex = 1;
+            this.selectedRecipeInfoLabel.Text = "Selected Recipe Info";
+            this.selectedRecipeInfoLabel.Click += new System.EventHandler(this.selectedRecipeInfoLabel_Click);
             // 
             // craftRecipeButton
             // 
@@ -262,102 +354,11 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // returnToTitleButton
-            // 
-            this.returnToTitleButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.returnToTitleButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.returnToTitleButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.returnToTitleButton.Location = new System.Drawing.Point(12, 636);
-            this.returnToTitleButton.Name = "returnToTitleButton";
-            this.returnToTitleButton.Size = new System.Drawing.Size(157, 98);
-            this.returnToTitleButton.TabIndex = 45;
-            this.returnToTitleButton.Text = "Return To Title";
-            this.returnToTitleButton.UseVisualStyleBackColor = false;
-            // 
-            // backToGameButton
-            // 
-            this.backToGameButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.backToGameButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.backToGameButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backToGameButton.Location = new System.Drawing.Point(12, 532);
-            this.backToGameButton.Name = "backToGameButton";
-            this.backToGameButton.Size = new System.Drawing.Size(157, 98);
-            this.backToGameButton.TabIndex = 44;
-            this.backToGameButton.Text = "Back To Game (ESC)";
-            this.backToGameButton.UseVisualStyleBackColor = false;
-            // 
-            // craftingButton
-            // 
-            this.craftingButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.craftingButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.craftingButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.craftingButton.Location = new System.Drawing.Point(12, 324);
-            this.craftingButton.Name = "craftingButton";
-            this.craftingButton.Size = new System.Drawing.Size(157, 98);
-            this.craftingButton.TabIndex = 42;
-            this.craftingButton.Text = "Crafting";
-            this.craftingButton.UseVisualStyleBackColor = false;
-            // 
-            // gameOptionsButton
-            // 
-            this.gameOptionsButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gameOptionsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gameOptionsButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gameOptionsButton.Location = new System.Drawing.Point(12, 428);
-            this.gameOptionsButton.Name = "gameOptionsButton";
-            this.gameOptionsButton.Size = new System.Drawing.Size(157, 98);
-            this.gameOptionsButton.TabIndex = 43;
-            this.gameOptionsButton.Text = "Game Options";
-            this.gameOptionsButton.UseVisualStyleBackColor = false;
-            // 
-            // spellsButton
-            // 
-            this.spellsButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.spellsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.spellsButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spellsButton.Location = new System.Drawing.Point(12, 220);
-            this.spellsButton.Name = "spellsButton";
-            this.spellsButton.Size = new System.Drawing.Size(157, 98);
-            this.spellsButton.TabIndex = 41;
-            this.spellsButton.Text = "Spells";
-            this.spellsButton.UseVisualStyleBackColor = false;
-            // 
-            // inventoryButton
-            // 
-            this.inventoryButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.inventoryButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.inventoryButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inventoryButton.Location = new System.Drawing.Point(12, 116);
-            this.inventoryButton.Name = "inventoryButton";
-            this.inventoryButton.Size = new System.Drawing.Size(157, 98);
-            this.inventoryButton.TabIndex = 40;
-            this.inventoryButton.Text = "Inventory";
-            this.inventoryButton.UseVisualStyleBackColor = false;
-            // 
-            // characterButton
-            // 
-            this.characterButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.characterButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.characterButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.characterButton.Location = new System.Drawing.Point(12, 12);
-            this.characterButton.Name = "characterButton";
-            this.characterButton.Size = new System.Drawing.Size(157, 98);
-            this.characterButton.TabIndex = 39;
-            this.characterButton.Text = "Character Info";
-            this.characterButton.UseVisualStyleBackColor = false;
-            // 
             // CraftingGui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1066, 794);
-            this.Controls.Add(this.returnToTitleButton);
-            this.Controls.Add(this.backToGameButton);
-            this.Controls.Add(this.craftingButton);
-            this.Controls.Add(this.gameOptionsButton);
-            this.Controls.Add(this.spellsButton);
-            this.Controls.Add(this.inventoryButton);
-            this.Controls.Add(this.characterButton);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.aquireIngrediantsButton);
             this.Controls.Add(this.craftRecipeButton);
@@ -371,6 +372,13 @@
             this.Controls.Add(this.enchantmentButton);
             this.Controls.Add(this.experimentButton);
             this.Controls.Add(this.alchemyButton);
+            this.Controls.Add(this.returnToTitleButton);
+            this.Controls.Add(this.backToGameButton);
+            this.Controls.Add(this.craftingButton);
+            this.Controls.Add(this.gameOptionsButton);
+            this.Controls.Add(this.spellsButton);
+            this.Controls.Add(this.inventoryButton);
+            this.Controls.Add(this.characterButton);
             this.Name = "CraftingGui";
             this.Text = "CraftingGui";
             this.Load += new System.EventHandler(this.CraftingGui_Load);
@@ -388,6 +396,13 @@
 
         #endregion
 
+        private System.Windows.Forms.Button returnToTitleButton;
+        private System.Windows.Forms.Button backToGameButton;
+        private System.Windows.Forms.Button craftingButton;
+        private System.Windows.Forms.Button gameOptionsButton;
+        private System.Windows.Forms.Button spellsButton;
+        private System.Windows.Forms.Button inventoryButton;
+        private System.Windows.Forms.Button characterButton;
         private System.Windows.Forms.Button alchemyButton;
         private System.Windows.Forms.Button experimentButton;
         private System.Windows.Forms.Button enchantmentButton;
@@ -406,12 +421,5 @@
         private System.Windows.Forms.Button craftRecipeButton;
         private System.Windows.Forms.Button aquireIngrediantsButton;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button returnToTitleButton;
-        private System.Windows.Forms.Button backToGameButton;
-        private System.Windows.Forms.Button craftingButton;
-        private System.Windows.Forms.Button gameOptionsButton;
-        private System.Windows.Forms.Button spellsButton;
-        private System.Windows.Forms.Button inventoryButton;
-        private System.Windows.Forms.Button characterButton;
     }
 }
